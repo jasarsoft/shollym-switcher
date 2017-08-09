@@ -176,7 +176,7 @@ Partial Class AboutForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(336, 242)
+        Me.ClientSize = New System.Drawing.Size(332, 238)
         Me.ControlBox = False
         Me.Controls.Add(Me.labelHorizontalLine)
         Me.Controls.Add(Me.labelDescription)
