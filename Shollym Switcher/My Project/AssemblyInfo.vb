@@ -8,12 +8,12 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("Shollym Switcher")>
-<Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("Shollym Switcher")>
-<Assembly: AssemblyCopyright("Copyright ©  2017")>
-<Assembly: AssemblyTrademark("")>
+<Assembly: AssemblyTitle("Shollym™ Switcher")>
+<Assembly: AssemblyDescription("Shollym™ Multi-Patch Switcher")>
+<Assembly: AssemblyCompany("Edin Jašarević (jasarsoft)")>
+<Assembly: AssemblyProduct("switcher.exe")>
+<Assembly: AssemblyCopyright("Copyright ©  2017 Edin Jašarević (jasarsoft)")>
+<Assembly: AssemblyTrademark("Jasarsoft")>
 
 <Assembly: ComVisible(False)>
 
