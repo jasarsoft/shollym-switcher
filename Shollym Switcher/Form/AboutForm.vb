@@ -76,7 +76,7 @@ Public Class AboutForm
         End Try
     End Sub
 
-    Private Sub textVersion_Click(sender As Object, e As EventArgs) Handles textVersion.Click
+    Private Sub TextVersion_Click(sender As Object, e As EventArgs) Handles textVersion.Click
         Dim page As String = "https://github.com/jasarsoft/shollym-switcher/releases"
 
         Try
@@ -86,6 +86,22 @@ Public Class AboutForm
             Dim msgTitle As New MessageTitle()
 
             msgText = "The offical release webpage was not succesfully opened." & Environment.NewLine & page
+            MessageBox.Show(msgText, msgTitle.WarnCaption, MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        End Try
+    End Sub
+
+    Private Sub TextDeveloper_Click(sender As Object, e As EventArgs) Handles textDeveloper.Click
+        Dim mail As String = "mailto:edinjasar14@gmail.com"
+
+        Try
+            Process.Start(mail)
+        Catch ex As Exception
+            Dim msgText As String
+            Dim msgTitle As New MessageTitle()
+
+            msgText = "There was error in calling meil service." & Environment.NewLine
+            msgText &= "E-Mail for contact: edinjasar14@gmail.com"
+
             MessageBox.Show(msgText, msgTitle.WarnCaption, MessageBoxButtons.OK, MessageBoxIcon.Warning)
         End Try
     End Sub
