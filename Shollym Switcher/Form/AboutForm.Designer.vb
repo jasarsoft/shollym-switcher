@@ -57,6 +57,7 @@ Partial Class AboutForm
         '
         'textDescription
         '
+        Me.textDescription.BackColor = System.Drawing.SystemColors.Window
         Me.textDescription.Location = New System.Drawing.Point(94, 158)
         Me.textDescription.MaxLength = 512
         Me.textDescription.Name = "textDescription"
@@ -75,6 +76,7 @@ Partial Class AboutForm
         '
         'textWebsite
         '
+        Me.textWebsite.BackColor = System.Drawing.SystemColors.Window
         Me.textWebsite.Cursor = System.Windows.Forms.Cursors.Hand
         Me.textWebsite.Location = New System.Drawing.Point(94, 130)
         Me.textWebsite.MaxLength = 512
@@ -103,6 +105,7 @@ Partial Class AboutForm
         '
         'textLicense
         '
+        Me.textLicense.BackColor = System.Drawing.SystemColors.Window
         Me.textLicense.Location = New System.Drawing.Point(94, 102)
         Me.textLicense.MaxLength = 512
         Me.textLicense.Name = "textLicense"
@@ -112,6 +115,7 @@ Partial Class AboutForm
         '
         'textDeveloper
         '
+        Me.textDeveloper.BackColor = System.Drawing.SystemColors.Window
         Me.textDeveloper.Location = New System.Drawing.Point(94, 74)
         Me.textDeveloper.MaxLength = 512
         Me.textDeveloper.Name = "textDeveloper"
@@ -130,6 +134,7 @@ Partial Class AboutForm
         '
         'textVersion
         '
+        Me.textVersion.BackColor = System.Drawing.SystemColors.Window
         Me.textVersion.Location = New System.Drawing.Point(94, 46)
         Me.textVersion.MaxLength = 512
         Me.textVersion.Name = "textVersion"
@@ -139,6 +144,7 @@ Partial Class AboutForm
         '
         'textTitle
         '
+        Me.textTitle.BackColor = System.Drawing.SystemColors.Window
         Me.textTitle.Location = New System.Drawing.Point(94, 18)
         Me.textTitle.MaxLength = 512
         Me.textTitle.Name = "textTitle"
