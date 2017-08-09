@@ -62,20 +62,24 @@ Public Class AboutForm
     ''' <param name="sender">A refernce to the constrol that raised the event</param>
     ''' <param name="e">Event argument that conatins of the event data</param>
     Private Sub TextTitle_Click(sender As Object, e As EventArgs) Handles textTitle.Click
+        Dim page As String = "https://www.facebook.com/ShollymPatch"
+
         Try
-            Process.Start("https://www.facebook.com/ShollymPatch")
+            Process.Start(page)
         Catch ex As Exception
             Dim msgText As String
             Dim msgTitle As New MessageTitle()
 
-            msgText = "The offical Facebook fan page can not be opened!" & Environment.NewLine
-            msgText &= "Link of Facebook page copied to your clipboard."
-
-            My.Computer.Clipboard.SetText(about.Website)
+            msgText = "Facebook fan page can not be opened, visit" & Environment.NewLine & page
             MessageBox.Show(msgText, msgTitle.WarnCaption, MessageBoxButtons.OK, MessageBoxIcon.Warning)
         End Try
     End Sub
 
+    ''' <summary>
+    ''' Open a page of currently published apps
+    ''' </summary>
+    ''' <param name="sender">A refernce to the constrol that raised the event</param>
+    ''' <param name="e">Event argument that contains of the event data</param>
     Private Sub TextVersion_Click(sender As Object, e As EventArgs) Handles textVersion.Click
         Dim page As String = "https://github.com/jasarsoft/shollym-switcher/releases"
 
@@ -90,6 +94,11 @@ Public Class AboutForm
         End Try
     End Sub
 
+    ''' <summary>
+    ''' Start service meil
+    ''' </summary>
+    ''' <param name="sender">A refernce to the constrol that raised the event</param>
+    ''' <param name="e">Event argument that contains of the event data</param>
     Private Sub TextDeveloper_Click(sender As Object, e As EventArgs) Handles textDeveloper.Click
         Dim mail As String = "mailto:edinjasar14@gmail.com"
 
@@ -106,6 +115,11 @@ Public Class AboutForm
         End Try
     End Sub
 
+    ''' <summary>
+    ''' Launch apache web site for license
+    ''' </summary>
+    ''' <param name="sender">A refernce to the constrol that raised the event</param>
+    ''' <param name="e">Event argument that contains of the event data</param>
     Private Sub TextLicense_Click(sender As Object, e As EventArgs) Handles textLicense.Click
         Dim site As String = "https://www.apache.org/licenses/LICENSE-2.0"
 
@@ -116,6 +130,26 @@ Public Class AboutForm
             Dim msgTitle As New MessageTitle()
 
             msgText = "Aphache website was not launched successfully, visit" & Environment.NewLine & site
+            MessageBox.Show(msgText, msgTitle.WarnCaption, MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        End Try
+    End Sub
+
+    ''' <summary>
+    ''' Starting the official site in the default browser
+    ''' </summary>
+    ''' <param name="sender">A refernce to the constrol that raised the event</param>
+    ''' <param name="e">Event argument that contains of the event data</param>
+    Private Sub TextWebsite_Click(sender As Object, e As EventArgs) Handles textWebsite.Click
+        Try
+            Process.Start(about.Website)
+        Catch ex As Exception
+            Dim msgText As String
+            Dim msgTitle As New MessageTitle()
+
+            msgText = "The offical webpage can not be opened!" & Environment.NewLine
+            msgText &= "Link of wepage copied to your clipboard."
+
+            My.Computer.Clipboard.SetText(about.Website)
             MessageBox.Show(msgText, msgTitle.WarnCaption, MessageBoxButtons.OK, MessageBoxIcon.Warning)
         End Try
     End Sub
