@@ -1,4 +1,5 @@
-﻿Public Class AboutForm
+﻿
+Public Class AboutForm
 
     'Fields
     Dim about As AboutSwitcher
@@ -55,4 +56,23 @@
         Me.Close()
     End Sub
 
+    ''' <summary>
+    ''' Text title event click method
+    ''' </summary>
+    ''' <param name="sender">A refernce to the constrol that raised the event</param>
+    ''' <param name="e">Event argument that conatins of the event data</param>
+    Private Sub TextTitle_Click(sender As Object, e As EventArgs) Handles textTitle.Click
+        Try
+            Process.Start("https://www.facebook.com/ShollymPatch")
+        Catch ex As Exception
+            Dim msgText As String
+            Dim msgTitle As New MessageTitle()
+
+            msgText = "The offical Facebook fan page can not be opened!" & Environment.NewLine
+            msgText &= "Link of Facebook page copied to your clipboard."
+
+            My.Computer.Clipboard.SetText(about.Website)
+            MessageBox.Show(msgText, msgTitle.WarnCaption, MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        End Try
+    End Sub
 End Class
