@@ -75,4 +75,18 @@ Public Class AboutForm
             MessageBox.Show(msgText, msgTitle.WarnCaption, MessageBoxButtons.OK, MessageBoxIcon.Warning)
         End Try
     End Sub
+
+    Private Sub textVersion_Click(sender As Object, e As EventArgs) Handles textVersion.Click
+        Dim page As String = "https://github.com/jasarsoft/shollym-switcher/releases"
+
+        Try
+            Process.Start(page)
+        Catch ex As Exception
+            Dim msgText As String
+            Dim msgTitle As New MessageTitle()
+
+            msgText = "The offical release webpage was not succesfully opened." & Environment.NewLine & page
+            MessageBox.Show(msgText, msgTitle.WarnCaption, MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        End Try
+    End Sub
 End Class
