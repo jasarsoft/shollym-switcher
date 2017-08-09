@@ -41,14 +41,14 @@ Partial Class AboutForm
         'labelHorizontalLine
         '
         Me.labelHorizontalLine.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.labelHorizontalLine.Location = New System.Drawing.Point(8, 192)
+        Me.labelHorizontalLine.Location = New System.Drawing.Point(12, 196)
         Me.labelHorizontalLine.Name = "labelHorizontalLine"
         Me.labelHorizontalLine.Size = New System.Drawing.Size(320, 2)
         Me.labelHorizontalLine.TabIndex = 12
         '
         'labelDescription
         '
-        Me.labelDescription.Location = New System.Drawing.Point(8, 158)
+        Me.labelDescription.Location = New System.Drawing.Point(12, 162)
         Me.labelDescription.Name = "labelDescription"
         Me.labelDescription.Size = New System.Drawing.Size(80, 22)
         Me.labelDescription.TabIndex = 5
@@ -57,9 +57,9 @@ Partial Class AboutForm
         '
         'textDescription
         '
-        Me.textDescription.BackColor = System.Drawing.SystemColors.Window
+        Me.textDescription.BackColor = System.Drawing.SystemColors.Control
         Me.textDescription.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.textDescription.Location = New System.Drawing.Point(94, 158)
+        Me.textDescription.Location = New System.Drawing.Point(98, 162)
         Me.textDescription.MaxLength = 128
         Me.textDescription.Name = "textDescription"
         Me.textDescription.ReadOnly = True
@@ -68,7 +68,7 @@ Partial Class AboutForm
         '
         'labelWebste
         '
-        Me.labelWebste.Location = New System.Drawing.Point(8, 130)
+        Me.labelWebste.Location = New System.Drawing.Point(12, 134)
         Me.labelWebste.Name = "labelWebste"
         Me.labelWebste.Size = New System.Drawing.Size(80, 22)
         Me.labelWebste.TabIndex = 4
@@ -77,9 +77,9 @@ Partial Class AboutForm
         '
         'textWebsite
         '
-        Me.textWebsite.BackColor = System.Drawing.SystemColors.Window
+        Me.textWebsite.BackColor = System.Drawing.SystemColors.Control
         Me.textWebsite.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.textWebsite.Location = New System.Drawing.Point(94, 130)
+        Me.textWebsite.Location = New System.Drawing.Point(98, 134)
         Me.textWebsite.MaxLength = 128
         Me.textWebsite.Name = "textWebsite"
         Me.textWebsite.ReadOnly = True
@@ -88,7 +88,7 @@ Partial Class AboutForm
         '
         'labelLicense
         '
-        Me.labelLicense.Location = New System.Drawing.Point(8, 102)
+        Me.labelLicense.Location = New System.Drawing.Point(12, 106)
         Me.labelLicense.Name = "labelLicense"
         Me.labelLicense.Size = New System.Drawing.Size(80, 22)
         Me.labelLicense.TabIndex = 3
@@ -97,7 +97,7 @@ Partial Class AboutForm
         '
         'labelDeveloper
         '
-        Me.labelDeveloper.Location = New System.Drawing.Point(8, 74)
+        Me.labelDeveloper.Location = New System.Drawing.Point(12, 78)
         Me.labelDeveloper.Name = "labelDeveloper"
         Me.labelDeveloper.Size = New System.Drawing.Size(80, 22)
         Me.labelDeveloper.TabIndex = 2
@@ -106,9 +106,9 @@ Partial Class AboutForm
         '
         'textLicense
         '
-        Me.textLicense.BackColor = System.Drawing.SystemColors.Window
+        Me.textLicense.BackColor = System.Drawing.SystemColors.Control
         Me.textLicense.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.textLicense.Location = New System.Drawing.Point(94, 102)
+        Me.textLicense.Location = New System.Drawing.Point(98, 106)
         Me.textLicense.MaxLength = 128
         Me.textLicense.Name = "textLicense"
         Me.textLicense.ReadOnly = True
@@ -117,9 +117,9 @@ Partial Class AboutForm
         '
         'textDeveloper
         '
-        Me.textDeveloper.BackColor = System.Drawing.SystemColors.Window
+        Me.textDeveloper.BackColor = System.Drawing.SystemColors.Control
         Me.textDeveloper.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.textDeveloper.Location = New System.Drawing.Point(94, 74)
+        Me.textDeveloper.Location = New System.Drawing.Point(98, 78)
         Me.textDeveloper.MaxLength = 128
         Me.textDeveloper.Name = "textDeveloper"
         Me.textDeveloper.ReadOnly = True
@@ -128,7 +128,7 @@ Partial Class AboutForm
         '
         'labelVersion
         '
-        Me.labelVersion.Location = New System.Drawing.Point(8, 46)
+        Me.labelVersion.Location = New System.Drawing.Point(12, 50)
         Me.labelVersion.Name = "labelVersion"
         Me.labelVersion.Size = New System.Drawing.Size(80, 22)
         Me.labelVersion.TabIndex = 1
@@ -137,9 +137,9 @@ Partial Class AboutForm
         '
         'textVersion
         '
-        Me.textVersion.BackColor = System.Drawing.SystemColors.Window
+        Me.textVersion.BackColor = System.Drawing.SystemColors.Control
         Me.textVersion.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.textVersion.Location = New System.Drawing.Point(94, 46)
+        Me.textVersion.Location = New System.Drawing.Point(98, 50)
         Me.textVersion.MaxLength = 128
         Me.textVersion.Name = "textVersion"
         Me.textVersion.ReadOnly = True
@@ -148,9 +148,9 @@ Partial Class AboutForm
         '
         'textTitle
         '
-        Me.textTitle.BackColor = System.Drawing.SystemColors.Window
+        Me.textTitle.BackColor = System.Drawing.SystemColors.Control
         Me.textTitle.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.textTitle.Location = New System.Drawing.Point(94, 18)
+        Me.textTitle.Location = New System.Drawing.Point(98, 22)
         Me.textTitle.MaxLength = 128
         Me.textTitle.Name = "textTitle"
         Me.textTitle.ReadOnly = True
@@ -159,7 +159,7 @@ Partial Class AboutForm
         '
         'labelTitle
         '
-        Me.labelTitle.Location = New System.Drawing.Point(8, 18)
+        Me.labelTitle.Location = New System.Drawing.Point(12, 22)
         Me.labelTitle.Name = "labelTitle"
         Me.labelTitle.Size = New System.Drawing.Size(80, 22)
         Me.labelTitle.TabIndex = 0
@@ -170,7 +170,7 @@ Partial Class AboutForm
         '
         Me.buttonClose.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.buttonClose.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
-        Me.buttonClose.Location = New System.Drawing.Point(8, 197)
+        Me.buttonClose.Location = New System.Drawing.Point(12, 201)
         Me.buttonClose.Name = "buttonClose"
         Me.buttonClose.Size = New System.Drawing.Size(320, 37)
         Me.buttonClose.TabIndex = 13
@@ -181,7 +181,7 @@ Partial Class AboutForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(328, 234)
+        Me.ClientSize = New System.Drawing.Size(344, 250)
         Me.ControlBox = False
         Me.Controls.Add(Me.labelHorizontalLine)
         Me.Controls.Add(Me.labelDescription)
