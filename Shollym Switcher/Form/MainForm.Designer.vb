@@ -22,9 +22,22 @@ Partial Class MainForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
+        Me.SuspendLayout()
+        '
+        'MainForm
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Text = "Form1"
+        Me.ClientSize = New System.Drawing.Size(344, 295)
+        Me.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.Name = "MainForm"
+        Me.ShowIcon = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Switcher: Shollym Patch"
+        Me.ResumeLayout(False)
+
     End Sub
 
 End Class
