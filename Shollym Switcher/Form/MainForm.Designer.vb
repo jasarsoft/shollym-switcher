@@ -49,13 +49,13 @@ Partial Class MainForm
         Me.menuItemTools = New System.Windows.Forms.ToolStripMenuItem()
         Me.menuToolsItemKitserver = New System.Windows.Forms.ToolStripMenuItem()
         Me.menuToolsItemSettings = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menuToolsItemMultiplayer = New System.Windows.Forms.ToolStripMenuItem()
         Me.menuItemHelp = New System.Windows.Forms.ToolStripMenuItem()
         Me.menuHelpItemReadme = New System.Windows.Forms.ToolStripMenuItem()
         Me.menuHelpItemFacebook = New System.Windows.Forms.ToolStripMenuItem()
         Me.menuHelpItemDownload = New System.Windows.Forms.ToolStripMenuItem()
         Me.menuHelpItemSeparator = New System.Windows.Forms.ToolStripSeparator()
         Me.menuHelpItemAbout = New System.Windows.Forms.ToolStripMenuItem()
-        Me.menuToolsItemMultiplayer = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.pictureLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.menuMain.SuspendLayout()
         Me.SuspendLayout()
@@ -218,30 +218,30 @@ Partial Class MainForm
         'menuEditItemPatch
         '
         Me.menuEditItemPatch.Name = "menuEditItemPatch"
-        Me.menuEditItemPatch.Size = New System.Drawing.Size(152, 22)
+        Me.menuEditItemPatch.Size = New System.Drawing.Size(137, 22)
         Me.menuEditItemPatch.Text = "&Patch"
         '
         'menuEditItemSeason
         '
         Me.menuEditItemSeason.Name = "menuEditItemSeason"
-        Me.menuEditItemSeason.Size = New System.Drawing.Size(152, 22)
+        Me.menuEditItemSeason.Size = New System.Drawing.Size(137, 22)
         Me.menuEditItemSeason.Text = "&Season"
         '
         'menuEditItemGameplay
         '
         Me.menuEditItemGameplay.Name = "menuEditItemGameplay"
-        Me.menuEditItemGameplay.Size = New System.Drawing.Size(152, 22)
+        Me.menuEditItemGameplay.Size = New System.Drawing.Size(137, 22)
         Me.menuEditItemGameplay.Text = "&Gameplay"
         '
         'menuEditSeparator1
         '
         Me.menuEditSeparator1.Name = "menuEditSeparator1"
-        Me.menuEditSeparator1.Size = New System.Drawing.Size(149, 6)
+        Me.menuEditSeparator1.Size = New System.Drawing.Size(134, 6)
         '
         'menuEditItemLogo
         '
         Me.menuEditItemLogo.Name = "menuEditItemLogo"
-        Me.menuEditItemLogo.Size = New System.Drawing.Size(152, 22)
+        Me.menuEditItemLogo.Size = New System.Drawing.Size(137, 22)
         Me.menuEditItemLogo.Text = "&Logo Image"
         '
         'menuItemTools
@@ -254,14 +254,20 @@ Partial Class MainForm
         'menuToolsItemKitserver
         '
         Me.menuToolsItemKitserver.Name = "menuToolsItemKitserver"
-        Me.menuToolsItemKitserver.Size = New System.Drawing.Size(152, 22)
+        Me.menuToolsItemKitserver.Size = New System.Drawing.Size(134, 22)
         Me.menuToolsItemKitserver.Text = "&Kitserver"
         '
         'menuToolsItemSettings
         '
         Me.menuToolsItemSettings.Name = "menuToolsItemSettings"
-        Me.menuToolsItemSettings.Size = New System.Drawing.Size(152, 22)
+        Me.menuToolsItemSettings.Size = New System.Drawing.Size(134, 22)
         Me.menuToolsItemSettings.Text = "&Settings"
+        '
+        'menuToolsItemMultiplayer
+        '
+        Me.menuToolsItemMultiplayer.Name = "menuToolsItemMultiplayer"
+        Me.menuToolsItemMultiplayer.Size = New System.Drawing.Size(134, 22)
+        Me.menuToolsItemMultiplayer.Text = "&Multiplayer"
         '
         'menuItemHelp
         '
@@ -298,12 +304,6 @@ Partial Class MainForm
         Me.menuHelpItemAbout.Name = "menuHelpItemAbout"
         Me.menuHelpItemAbout.Size = New System.Drawing.Size(152, 22)
         Me.menuHelpItemAbout.Text = "&About"
-        '
-        'menuToolsItemMultiplayer
-        '
-        Me.menuToolsItemMultiplayer.Name = "menuToolsItemMultiplayer"
-        Me.menuToolsItemMultiplayer.Size = New System.Drawing.Size(152, 22)
-        Me.menuToolsItemMultiplayer.Text = "&Multiplayer"
         '
         'MainForm
         '
