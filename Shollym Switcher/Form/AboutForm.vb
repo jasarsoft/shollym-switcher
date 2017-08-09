@@ -3,6 +3,12 @@
     'Fields
     Dim about As AboutSwitcher
 
+    Private Structure SiteConst
+        Public Const HTTP As String = "http://"
+        Public Const HTTPS As String = "https://"
+        Public Const WWW As String = "www."
+    End Structure
+
     ''' <summary>
     ''' About form constructor
     ''' </summary>
@@ -24,7 +30,19 @@
         Me.textVersion.Text = about.Version
         Me.textDeveloper.Text = about.Developer
         Me.textLicense.Text = about.License
-        Me.textWebsite.Text = about.Website
+
+        Dim site As String = about.Website.ToLower()
+        If site.StartsWith(SiteConst.HTTP) Then
+            Me.textWebsite.Text = site.Replace(SiteConst.HTTP, SiteConst.WWW)
+        ElseIf site.StartsWith(SiteConst.HTTPS) Then
+            Me.textWebsite.Text = site.Replace(SiteConst.HTTPS, SiteConst.WWW)
+        ElseIf Not site.StartsWith(SiteConst.WWW) Then
+            Me.textWebsite.Text = site.Insert(0, SiteConst.WWW)
+        End If
+
+        'simple code
+        'Me.textWebsite.Text = about.Website.Replace("https://", "www.")
+
         Me.textDescription.Text = about.Description
     End Sub
 
