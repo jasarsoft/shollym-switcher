@@ -1,4 +1,4 @@
-﻿Public NotInheritable Class AboutForm
+﻿Public Class AboutForm
 
     'Fields
     Dim about As AboutSwitcher
@@ -15,7 +15,7 @@
     End Sub
 
     ''' <summary>
-    ''' About form preload event
+    ''' About form load event
     ''' </summary>
     ''' <param name="sender">A reference to the constrol that raised the event</param>
     ''' <param name="e">Event argument that contains of the event data</param>
