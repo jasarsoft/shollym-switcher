@@ -105,4 +105,18 @@ Public Class AboutForm
             MessageBox.Show(msgText, msgTitle.WarnCaption, MessageBoxButtons.OK, MessageBoxIcon.Warning)
         End Try
     End Sub
+
+    Private Sub TextLicense_Click(sender As Object, e As EventArgs) Handles textLicense.Click
+        Dim site As String = "https://www.apache.org/licenses/LICENSE-2.0"
+
+        Try
+            Process.Start(site)
+        Catch ex As Exception
+            Dim msgText As String
+            Dim msgTitle As New MessageTitle()
+
+            msgText = "Aphache website was not launched successfully, visit" & Environment.NewLine & site
+            MessageBox.Show(msgText, msgTitle.WarnCaption, MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        End Try
+    End Sub
 End Class
