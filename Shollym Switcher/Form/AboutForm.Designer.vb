@@ -59,7 +59,7 @@ Partial Class AboutForm
         '
         Me.textDescription.BackColor = System.Drawing.SystemColors.Window
         Me.textDescription.Location = New System.Drawing.Point(94, 158)
-        Me.textDescription.MaxLength = 512
+        Me.textDescription.MaxLength = 128
         Me.textDescription.Name = "textDescription"
         Me.textDescription.ReadOnly = True
         Me.textDescription.Size = New System.Drawing.Size(234, 22)
@@ -79,7 +79,7 @@ Partial Class AboutForm
         Me.textWebsite.BackColor = System.Drawing.SystemColors.Window
         Me.textWebsite.Cursor = System.Windows.Forms.Cursors.Hand
         Me.textWebsite.Location = New System.Drawing.Point(94, 130)
-        Me.textWebsite.MaxLength = 512
+        Me.textWebsite.MaxLength = 128
         Me.textWebsite.Name = "textWebsite"
         Me.textWebsite.ReadOnly = True
         Me.textWebsite.Size = New System.Drawing.Size(234, 22)
@@ -107,7 +107,7 @@ Partial Class AboutForm
         '
         Me.textLicense.BackColor = System.Drawing.SystemColors.Window
         Me.textLicense.Location = New System.Drawing.Point(94, 102)
-        Me.textLicense.MaxLength = 512
+        Me.textLicense.MaxLength = 128
         Me.textLicense.Name = "textLicense"
         Me.textLicense.ReadOnly = True
         Me.textLicense.Size = New System.Drawing.Size(234, 22)
@@ -117,7 +117,7 @@ Partial Class AboutForm
         '
         Me.textDeveloper.BackColor = System.Drawing.SystemColors.Window
         Me.textDeveloper.Location = New System.Drawing.Point(94, 74)
-        Me.textDeveloper.MaxLength = 512
+        Me.textDeveloper.MaxLength = 128
         Me.textDeveloper.Name = "textDeveloper"
         Me.textDeveloper.ReadOnly = True
         Me.textDeveloper.Size = New System.Drawing.Size(234, 22)
@@ -136,7 +136,7 @@ Partial Class AboutForm
         '
         Me.textVersion.BackColor = System.Drawing.SystemColors.Window
         Me.textVersion.Location = New System.Drawing.Point(94, 46)
-        Me.textVersion.MaxLength = 512
+        Me.textVersion.MaxLength = 128
         Me.textVersion.Name = "textVersion"
         Me.textVersion.ReadOnly = True
         Me.textVersion.Size = New System.Drawing.Size(234, 22)
@@ -146,7 +146,7 @@ Partial Class AboutForm
         '
         Me.textTitle.BackColor = System.Drawing.SystemColors.Window
         Me.textTitle.Location = New System.Drawing.Point(94, 18)
-        Me.textTitle.MaxLength = 512
+        Me.textTitle.MaxLength = 128
         Me.textTitle.Name = "textTitle"
         Me.textTitle.ReadOnly = True
         Me.textTitle.Size = New System.Drawing.Size(234, 22)
@@ -176,7 +176,7 @@ Partial Class AboutForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(340, 246)
+        Me.ClientSize = New System.Drawing.Size(336, 242)
         Me.ControlBox = False
         Me.Controls.Add(Me.labelHorizontalLine)
         Me.Controls.Add(Me.labelDescription)
