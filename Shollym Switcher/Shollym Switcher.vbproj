@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{DC406A8D-BB54-47D0-8677-F6C67FC096C2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Shollym_Switcher.My.MyApplication</StartupObject>
-    <RootNamespace>Shollym_Switcher</RootNamespace>
+    <StartupObject>Jasarsoft.Switcher.ShollymPatch.My.MyApplication</StartupObject>
+    <RootNamespace>Jasarsoft.Switcher.ShollymPatch</RootNamespace>
     <AssemblyName>switcher</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
